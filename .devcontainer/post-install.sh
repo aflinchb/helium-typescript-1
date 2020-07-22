@@ -24,6 +24,7 @@ DEBIAN_FRONTEND=dialog
 echo "" >> ~/.bashrc
 echo ". ${PWD}/.devcontainer/.bashrc-append" >> ~/.bashrc
 
+npm install npm@latest -g
 npm install
 npm run build
 
