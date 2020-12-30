@@ -35,7 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BODY: ${{ steps.outdated.outputs.npm_update_text }}
         with:
-          filename: .github/npm-update-template.md
+          filename: .github/ISSUE_TEMPLATE/npm-update-template.md
           update_existing: true
           if: steps.outdated.outputs.has_npm_update == 'true'
         id: create-issue
