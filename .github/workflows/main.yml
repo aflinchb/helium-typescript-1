@@ -30,6 +30,6 @@ jobs:
         if: steps.outdated.outputs.has_npm_update == 'true'
         with:
           title: Update npm packages
-          token: ${{secrets.GITHUB_TOKEN}}
+          token: ${{ secrets.GITHUB_TOKEN }}
           labels: Bug
-          body: steps.outdated.npm_update_text
+          body: ${{ steps.outdated.npm_update_text }}
