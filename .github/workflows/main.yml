@@ -23,6 +23,8 @@ jobs:
       
       - uses: MeilCli/npm-update-check-action@v4.0.0
         name: Run npm update
+        with:
+          output_text_style: long
         id: outdated
       
       - uses: nashmaniac/create-issue-action@v1.1
