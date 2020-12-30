@@ -37,6 +37,5 @@ jobs:
         with:
           filename: .github/ISSUE_TEMPLATE/npm-update-template.md
           update_existing: true
-          if: steps.outdated.outputs.has_npm_update == 'true'
         id: create-issue
        
