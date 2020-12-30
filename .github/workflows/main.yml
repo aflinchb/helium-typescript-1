@@ -32,4 +32,4 @@ jobs:
           title: Update npm packages
           token: ${{ secrets.GITHUB_TOKEN }}
           labels: Bug
-          body: ${{ steps.outdated.npm_update_text }}
+          body: ${{ steps.outdated.outputs.npm_update_text }}
